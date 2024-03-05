@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="module" src="../js/page.js"></script>
+  </head>
+  <body>
+    <div class="full-window">
+      <div class="left-side">
+        <div class="searchBar-div" id="searchBar-div">
+          <img src="../images/magnifier.png" alt="" id="magnifier" />
+          <input
+            type="text"
+            id="search-bar"
+            placeholder="Search or start a new chat..."
+          />
+        </div>
+
+        <div id="leftSide"></div>
+        <div id="leftSide-button">
+          <button id="more-contacts-btn" class="hidden">more</button>
+        </div>
+      </div>
+      <div class="right-side" id="RS">
+        <div class="contact-solo-info hidden">
+          <div class="contact-V2">
+            <div class="hidden" id="contactInformation"></div>
+            <div class="profile-pic">
+              <img src="" alt="profile-pic" />
+            </div>
+            <div class="contact-info-V2">
+              <p class="contact-name"></p>
+            </div>
+          </div>
+          <button class="refreshChat">
+            <img src="../images/icons8-refresh-24.png" alt="O" />
+          </button>
+        </div>
+        <div class="the-chat hidden"></div>
+        <div class="send-messages hidden">
+          <input type="text" id="forMessages" placeholder="Type a message" />
+          <button id="sendMessages">
+            <img src="../images/send.png" alt="send" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
