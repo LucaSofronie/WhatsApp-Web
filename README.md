@@ -11,7 +11,7 @@ This project is a WhatsApp clone built using the WhatsApp API (WaAPI) service. I
 - Real-time messaging using the WaAPI service.
 - Simple and intuitive user interface similar to WhatsApp.
 - Supports sending messages to individual contacts.
-- Automatic synchronization with WaAPI for seamless messaging experience.
+- Automatic synchronization with WaAPI for a seamless messaging experience.
 
 ## Setup
 
@@ -35,8 +35,19 @@ To set up the WhatsApp clone, follow these steps:
      ```
 
 4. **Run the Application:**
+   - Clone the repository:
+     ```bash
+     git clone https://github.com/LucaSofronie/WhatsApp-Web.git
+     ```
+
+   - Initialize the submodule:
+     ```bash
+     git submodule update --init
+     ```
+
    - Open the `index.html` file in your web browser.
    - Start using the WhatsApp clone to send and receive messages.
+
 ## Contributing
 
 Contributions to the WhatsApp clone project are welcome! If you'd like to contribute, please follow these guidelines:
