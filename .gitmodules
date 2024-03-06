@@ -1,0 +1,3 @@
+[submodule "WaApi-scraping"]
+	path = WaApi-scraping
+	url = https://github.com/LucaSofronie/WaApi-scraping.git
