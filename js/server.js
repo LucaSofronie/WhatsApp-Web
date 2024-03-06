@@ -2,7 +2,7 @@ const http = require("http");
 const fs = require("fs");
 const url = require("url");
 const port = 3000;
-const autoBrowser = require("../web scraping/index.js");
+const autoBrowser = require("../WaApi-scraping/index.js");
 const info = require("./personal_infoNode.js");
 
 const server = http.createServer(async function (request, response) {
