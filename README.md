@@ -4,47 +4,49 @@
 
 ## Overview
 
-This project is a WhatsApp clone built using the WhatsApp API (WaAPI) service. It allows users to send and receive messages in real-time, similar to the functionality of WhatsApp.
+This project is a WhatsApp clone built using the WhatsApp API (WaAPI) service. It enables users to send and receive messages in real-time, mimicking the functionality of WhatsApp.
 
 ## Features
 
 - Real-time messaging using the WaAPI service.
-- Simple and intuitive user interface similar to WhatsApp.
-- Supports sending messages to individual contacts.
+- Simple and intuitive user interface akin to WhatsApp.
+- Capability to send messages to individual contacts.
 - Automatic synchronization with WaAPI for a seamless messaging experience.
 
-## Setup
+## How to Setup the WhatsApp Clone
 
-To set up the WhatsApp clone, follow these steps:
+Follow these steps to set up the WhatsApp clone:
 
 1. **Create a WaAPI Account:**
    - Go to [waapi.app](https://waapi.app) and sign up for an account.
-   - Select the Free Trial option to create an instance.
-   - Scan the QR code to obtain the trial instance code (e.g., `#6630`).
+   - Select the Free Trial option and create an instance.
+   - Scan the QR code to obtain the trial instance code (e.g., #6630).
+   - When setting up the trial instance, ensure to include your phone number with the country code followed by `@c.us` (e.g., `1234567890@c.us`). This will serve as the static receiver for your trial account.
 
 2. **Generate API Token:**
    - After creating the instance, generate an API token.
-   - Copy the API token and paste it into the `personal_info.js` and `personal_infoNode.js` files in your project directory.
-   - Additionally, paste the email, password, and instance code into the respective files.
+   - Copy the API token for later use.
 
-3. **Start Node.js Server:**
+3. **Configure Personal Information:**
+   - Clone the repository:
+     ```bash
+     git clone https://github.com/LucaSofronie/WhatsApp-Web.git
+     ```
+   - Initialize the submodule:
+     ```bash
+     git submodule update --init
+     ```
+   - Open the `personal_info.js` and `personal_infoNode.js` files in your project directory.
+   - Paste your API token, instance code, email, and password into the respective files.
+
+4. **Run the Node.js Server:**
    - Open the terminal and navigate to your project directory.
    - Run the Node.js server using the command:
      ```bash
      node server.js
      ```
 
-4. **Run the Application:**
-   - Clone the repository:
-     ```bash
-     git clone https://github.com/LucaSofronie/WhatsApp-Web.git
-     ```
-
-   - Initialize the submodule:
-     ```bash
-     git submodule update --init
-     ```
-
+5. **Run the Application:**
    - Open the `index.html` file in your web browser.
    - Start using the WhatsApp clone to send and receive messages.
 
